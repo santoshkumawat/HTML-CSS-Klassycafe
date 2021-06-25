@@ -741,6 +741,28 @@ footer {
   .top-right-bg {
     width: 100%;
   }
+
+  .text-on-image > h1 {
+    text-align: center;
+  }
+
+  .text-on-image > p {
+    text-align: center;
+  }
+  .resev-btn {
+    text-align: center;
+  }
+  .resev-btn > a {
+    text-align: left;
+    font-size: 75%;
+    text-transform: capitalize;
+    background-color: floralwhite;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #fb6356;
+    border-radius: 3px;
+    font-weight: 600;
+  }
   /* top section ends */
 
   /*about middle section  starts*/
