@@ -1,0 +1,975 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* css for header */
+.header {
+  display: flex;
+  width: 85%;
+  margin: 20px auto;
+  position: relative;
+  flex-wrap: wrap;
+}
+.logo {
+  padding: 5px 0;
+  display: flex;
+  width: 25%;
+}
+.menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+
+ul {
+  font-weight: 500;
+  list-style-type: none;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li > a {
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.features {
+  display: inline-block;
+  position: relative;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+li a:hover,
+.features:hover .dropbtn {
+  color: #fb6356;
+  background-color: #f1f1f1;
+}
+li.features {
+  display: inline-block;
+}
+.drop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.drop-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.features:hover .drop-content {
+  display: block;
+}
+
+.lines {
+  position: absolute;
+  margin: auto;
+  width: 8%;
+  height: 100%;
+  display: none;
+}
+
+.line {
+  width: 40px;
+  height: 4px;
+  border: 0.4px solid black;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+.nav-menu {
+  display: none;
+}
+/* header ends */
+
+/* top section including sidebar and orange background on left */
+.top-section {
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+}
+.top-left-bg {
+  width: 30%;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+.top-left-bg-inner {
+  color: floralwhite;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.top-left-bg-inner > img {
+  width: 100%;
+  height: 600px;
+}
+.top-right-bg {
+  width: 70%;
+  height: 600px;
+  position: relative;
+  text-align: center;
+}
+.top-right-bg-inner {
+  color: floralwhite;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.top-right-bg-inner > img {
+  height: 600px;
+  width: 100%;
+}
+.text-on-image {
+  position: absolute;
+  margin: auto;
+}
+.text-on-image > h1 {
+  font-weight: 700;
+  font-size: 300%;
+  text-align: left;
+}
+
+.text-on-image > p {
+  margin: 5px 0;
+  font-size: 15px;
+  text-align: left;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.resev-btn{
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 4px;
+  background-color: #fb6356;
+  color: floralwhite;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+}
+.resev-btn > a {
+  text-align: left;
+  font-size: 75%;
+  text-transform: capitalize;
+  background-color: floralwhite;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #fb6356;
+  border-radius: 3px;
+  font-weight: 600;
+}
+/* top section ends */
+
+/*about middle section  starts*/
+.middle-section {
+  display: flex;
+  width: 85%;
+  margin: 100px auto;
+}
+.aboutus {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-between;
+}
+.left-content {
+  width: 48%;
+}
+.left-content > h2{
+  font-size: 200%;
+  text-transform: capitalize;
+  padding-right: 120px;
+  font-weight: 900;
+}
+.left-content > p {
+  margin: 10px 0;
+}
+.about-images {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.about-images > img {
+  width: 30%;
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 48%;
+}
+.right-content > img {
+  width: 100%;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #fb6356;
+  color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 17px 19px;
+  cursor: pointer;
+}
+/* middle section ends */
+
+/* .middle-section 2 starts */
+.middle-section2 {
+  display: flex;
+  /* background-color: #FEFAF9;*/
+  background-color: #ffdebc;
+  border-radius: 4px;
+  width: 100%;
+  margin: 100px auto;
+}
+.our-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.top-content {
+  text-align: left;
+  width: 85%;
+  margin: 50px auto;
+}
+.top-content > h2{
+  font-size: 200%;
+  padding-right: 120px;
+  font-weight: 900;
+}
+.middle-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto;
+}
+.imgs {
+  position: relative;
+  width: 18%;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.imgs > img {
+  width: 100%;
+  height: 100%;
+}
+.price-tag {
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 2px;
+  color: floralwhite;
+  position: absolute;
+  top: 0;
+  background-color: #fb6356;
+}
+.desc {
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  color: floralwhite;
+  position: absolute;
+  bottom: -100px;
+  transition: 0.8s;
+  background-color: #fb6356;
+}
+.imgs:hover {
+  cursor: pointer;
+}
+.imgs:hover .desc {
+  bottom: 0;
+}
+
+.bottom-content {
+  width: 10%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prev-next {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 3px;
+  color: floralwhite;
+  transition: 0.9s;
+}
+.prev-next:hover {
+  background-color: #fb6356;
+}
+
+/* chef section */
+.chef-section {
+  display: flex;
+  width: 85%;
+  margin: 100px auto;
+}
+.our-chef {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.chef-heading {
+  text-align: center;
+  width: 85%;
+  margin: 20px auto;
+}
+.chef-heading > h2{
+    font-size: 200%;
+    font-weight: 900;
+  }
+
+.chef-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto 0;
+}
+.chef-img {
+  display: flex;
+  flex-direction: column;
+  border: 1px #e0dddd solid;
+  border-radius: 2px;
+  padding: 5px;
+  width: 30%;
+}
+.chef-img:hover {
+  border: 1px #fb6356 solid;
+  transition: all .3s;
+}
+.chef-img-inner {
+  padding: 5px;
+  width: 100%;
+}
+.chef-img-inner > img {
+  width: 100%;
+}
+.chef-img-inner :hover {
+  cursor: pointer;
+}
+
+.chef-desc {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  bottom: 0;
+}
+
+/* chef-section ends */
+
+/* reservation section starts */
+.reservation {
+  color: floralwhite;
+  display: flex;
+  margin: 100px auto;
+  width: 100%;
+  background-image: url("../images/reservation-bg.jpg");
+  border-radius: 4px;
+}
+.reservation-inner {
+  display: flex;
+  width: 85%;
+  margin: 25px auto;
+  justify-content: space-between;
+}
+.contactus {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  margin: 10px 0;
+  padding: 20px 0;
+}
+
+.contact-desc {
+  margin: 10px auto;
+  padding: 20px 0;
+  width: 100%;
+}
+.contact-desc> h2{
+    font-size: 200%;
+    text-transform: capitalize;
+    padding-top: 15px;
+    font-weight: 700;
+}
+.contact-desc > h5 {
+  padding-top: 10px;
+}
+.contact-desc > p {
+  padding-top: 25px;
+}
+.contact-detail {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  width: 100%;
+}
+.cont {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: black;
+  background-color: white;
+  width: 46%;
+  height: 150px;
+  margin: auto 0;
+  border-radius: 2px;
+}
+.conts {
+  display: block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.conts > span {
+  display: inline-block;
+  width: 100%;
+}
+.cont-icon {
+  color: white;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  left: 50%;
+  padding: 5px;
+  transform: translatex(-50%);
+  align-items: center;
+  background-color: #fb6356;
+  border-radius: 50%;
+}
+.cont-icon i {
+  vertical-align: -webkit-baseline-middle;
+}
+.table-reserv {
+  padding: 20px;
+  background-color: white;
+  width: 48%;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-div {
+  width: 100%;
+}
+.table-form {
+  text-align: center;
+  margin: 15px;
+  color: black;
+}
+.input-section {
+  width: 100%;
+}
+.inputs {
+  margin-top: 15px;
+  width: 48%;
+}
+input,
+textarea {
+  width: 97%;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  margin: 10px 0;
+  padding: 10px;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background: transparent;
+}
+.reserv-btn {
+  width: 97%;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #fb6356;
+  color: floralwhite;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+/* reservation section ends */
+
+/* weekend section starts */
+.klassy-week {
+  margin: 100px auto;
+  width: 85%;
+}
+.klassy-week-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.week-top {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.week-heading {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.week-heading> h2{
+  font-size: 200%;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+.week-time {
+  padding: 10px;
+  display: flex;
+}
+.week-time-inner {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.week-time-inner span {
+  padding: 5px;
+  font-size: medium;
+  font-weight: 500;
+}
+.week-time-inner span:hover {
+  color: #fb6356;
+}
+.week-bottom {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+.week-left-right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.week-items {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.week-img {
+  margin: 10px 0;
+}
+.week-img-text {
+  margin: 10px;
+  text-align: left;
+}
+.week-item-pricetag {
+  padding: 15px;
+}
+.week-item-pricetag > span {
+  padding: 15px;
+  background-color: #fb6356;
+  color: floralwhite;
+  font-weight: bold;
+  border-radius: 2px;
+}
+/* weekend section ends */
+
+/* footer starts */
+footer {
+  margin: 20px auto;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #fb6356;
+  color: floralwhite;
+  border-radius: 4px;
+}
+.footer {
+  display: flex;
+  width: 85%;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > div {
+  width: 32%;
+}
+.footer-icon > a {
+  text-decoration: none;
+  color: floralwhite;
+}
+.footer-icon > a > i {
+  padding: 5px;
+}
+/* footer ends */
+
+/* media query start */
+
+@media screen and (max-width: 992px) {
+  body {
+    width: 95%;
+  }
+
+  /*navbar */
+  .nav-menu {
+    color: floralwhite;
+    width: 100%;
+    display: none;
+  }
+  ul {
+    padding: 10px;
+    font-weight: 500;
+    list-style-type: none;
+    width: 100%;
+  }
+  li {
+    border-bottom: 1px solid gray;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  li > a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .features {
+    display: block;
+    position: relative;
+  }
+  .drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  li a:hover,
+  .features:hover .dropbtn {
+    color: #fb6356;
+    background-color: #f1f1f1;
+  }
+  li.features {
+    display: block;
+  }
+  .drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .drop-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .features:hover .drop-content {
+    display: block;
+  }
+
+  /* css for header */
+  .header {
+    width: 85%;
+    padding: 0 15px;
+  }
+  .logo {
+    width: 30%;
+    align-items: center;
+  }
+  .menu {
+    display: none;
+  }
+  .lines {
+    width: 70%;
+    display: block;
+    text-align: -webkit-right;
+    position: relative;
+  }
+  /* header ends */
+
+  /* top section including sidebar and orange background on left */
+  .top-section {
+    display: block;
+    width: 100%;
+  }
+  .top-left-bg {
+    width: 100%;
+  }
+  .top-left-bg-inner > img {
+    width: 100%;
+  }
+  .top-right-bg {
+    width: 100%;
+  }
+  /* top section ends */
+
+  /*about middle section  starts*/
+  .middle-section {
+    display: block;
+  }
+  .aboutus {
+    display: block;
+    width: 100%;
+  }
+  .left-content {
+    width: 100%;
+  }
+  .left-content > h2,
+  h5 {
+    text-align: center;
+  }
+  .right-content {
+    margin: 25px auto;
+    width: 100%;
+  }
+  .right-content > img {
+    width: 100%;
+  }
+  /* middle section ends */
+
+  /* reservation section starts */
+  .reservation {
+    display: block;
+  }
+  .reservation-inner {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .contactus {
+    text-align: center;
+    width: 100%;
+  }
+  .table-reserv {
+    width: 100%;
+  }
+  .inputs {
+    width: 100%;
+  }
+  input,
+  textarea {
+    width: 100%;
+  }
+  .reserv-btn {
+    width: 100%;
+  }
+  /* reservation section ends */
+
+  /* weekend section starts */
+  .week-bottom {
+    width: 100%;
+    display: block;
+  }
+  .week-left-right {
+    justify-content: center;
+    width: 100%;
+  }
+  .week-items {
+    margin: 5px 0;
+  }
+
+  .week-item-pricetag {
+    padding: 10px;
+  }
+  .week-item-pricetag > span {
+    padding: 25px;
+  }
+  /* weekend section ends */
+
+  /* footer starts */
+  .footer div:nth-child(3) {
+    text-align: center;
+  }
+  /* footer ends */
+}
+
+@media screen and (max-width: 768px) {
+  /* css for header */
+  .logo {
+    width: 80%;
+  }
+  .lines {
+    width: 20%;
+  }
+  /* header ends */
+
+  /* .middle-section 2 starts */
+  .our-menu {
+    display: block;
+  }
+  .top-content {
+    width: 85%;
+    margin: 25px auto;
+  }
+  .middle-content {
+    display: block;
+    width: 85%;
+  }
+  .imgs {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .imgs > img {
+    width: 100%;
+    height: 400px;
+  }
+  .imgs:hover .desc {
+    bottom: 7px;
+    top: unset;
+  }
+  .bottom-content {
+    width: 20%;
+  }
+  /* .middle-section 2 starts */
+
+  /* chef section */
+  .our-chef {
+    display: block;
+  }
+  .chef-images {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .chef-img {
+    margin: 15px 0;
+    width: 100%;
+  }
+  /* chef-section ends */
+
+  /* reservation section starts */
+  .contact-detail {
+    display: block;
+    padding: 5px 0;
+  }
+  .cont {
+    margin: 30px 0;
+    padding: 20px;
+    width: 100%;
+  }
+  .conts {
+    padding: 5px;
+    margin: 5px;
+  }
+  /* reservation section ends */
+
+  /* footer starts */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+  .footer > div {
+    display: block;
+    width: 100%;
+    text-align: center !important;
+    margin: 20px;
+  }
+  .footer > div:nth-child(1) {
+    word-spacing: 1.5em;
+  }
+  .footer-icon {
+    text-align: center;
+  }
+  .footer-icon > a {
+    text-decoration: none;
+    color: floralwhite;
+  }
+  .footer-icon > a > i {
+    padding: 5px;
+  }
+  /* footer ends */
+}
+
+@media only screen and (max-width: 500px) {
+  /*about section start*/
+  .left-content>h2, h4{
+    text-align: center;
+    padding-right: 0;
+  }
+  /*about section start*/
+
+  /*menu section start*/
+  .top-content>h2, h4{
+    text-align: center;
+    padding-right: 0;
+  }
+  /*menu section ends */
+
+  /* weekend section starts */
+  .week-bottom {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .week-left-right {
+    margin: 0;
+    width: 100%;
+  }
+  .week-items {
+    border: 1px solid #fb6356;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+  }
+  .week-img {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .week-img-text {
+    width: 100%;
+    padding-right: 10px;
+    font-size: small;
+    text-align: center;
+  }
+  .week-item-pricetag {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+  }
+  .week-item-pricetag > span {
+    padding: 15px 50px;
+  }
+  /* weekend section ends */
+}
