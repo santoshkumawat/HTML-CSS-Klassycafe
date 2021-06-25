@@ -7,7 +7,6 @@
 body {
   width: 100%;
   margin: auto;
-  margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -165,7 +164,7 @@ li.features {
   letter-spacing: 3px;
   font-weight: 600;
 }
-.resev-btn{
+.resev-btn {
   width: 100%;
   padding: 20px 0;
   border-radius: 4px;
@@ -205,7 +204,7 @@ li.features {
 .left-content {
   width: 48%;
 }
-.left-content > h2{
+.left-content > h2 {
   font-size: 200%;
   text-transform: capitalize;
   padding-right: 120px;
@@ -267,7 +266,7 @@ li.features {
   width: 85%;
   margin: 50px auto;
 }
-.top-content > h2{
+.top-content > h2 {
   font-size: 200%;
   padding-right: 120px;
   font-weight: 900;
@@ -292,7 +291,7 @@ li.features {
 .price-tag {
   padding: 10px;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 4px;
   color: floralwhite;
   position: absolute;
   top: 0;
@@ -351,10 +350,10 @@ li.features {
   width: 85%;
   margin: 20px auto;
 }
-.chef-heading > h2{
-    font-size: 200%;
-    font-weight: 900;
-  }
+.chef-heading > h2 {
+  font-size: 200%;
+  font-weight: 900;
+}
 
 .chef-images {
   display: flex;
@@ -366,13 +365,13 @@ li.features {
   display: flex;
   flex-direction: column;
   border: 1px #e0dddd solid;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 5px;
   width: 30%;
 }
 .chef-img:hover {
   border: 1px #fb6356 solid;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .chef-img-inner {
   padding: 5px;
@@ -422,11 +421,11 @@ li.features {
   padding: 20px 0;
   width: 100%;
 }
-.contact-desc> h2{
-    font-size: 200%;
-    text-transform: capitalize;
-    padding-top: 15px;
-    font-weight: 700;
+.contact-desc > h2 {
+  font-size: 200%;
+  text-transform: capitalize;
+  padding-top: 15px;
+  font-weight: 700;
 }
 .contact-desc > h5 {
   padding-top: 10px;
@@ -450,7 +449,7 @@ li.features {
   width: 46%;
   height: 150px;
   margin: auto 0;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .conts {
   display: block;
@@ -551,7 +550,7 @@ textarea {
   padding: 10px;
   text-align: center;
 }
-.week-heading> h2{
+.week-heading > h2 {
   font-size: 200%;
   text-transform: capitalize;
   font-weight: 900;
@@ -605,19 +604,19 @@ textarea {
   padding: 15px;
 }
 .week-item-pricetag > span {
-  padding: 15px;
+  padding: 20px;
   background-color: #fb6356;
   color: floralwhite;
   font-weight: bold;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 /* weekend section ends */
 
 /* footer starts */
 footer {
-  margin: 20px auto;
   padding: 20px 0;
   width: 100%;
+  margin: auto;
   background-color: #fb6356;
   color: floralwhite;
   border-radius: 4px;
@@ -923,14 +922,16 @@ footer {
 
 @media only screen and (max-width: 500px) {
   /*about section start*/
-  .left-content>h2, h4{
+  .left-content > h2,
+  h4 {
     text-align: center;
     padding-right: 0;
   }
   /*about section start*/
 
   /*menu section start*/
-  .top-content>h2, h4{
+  .top-content > h2,
+  h4 {
     text-align: center;
     padding-right: 0;
   }
@@ -947,7 +948,7 @@ footer {
   }
   .week-items {
     border: 1px solid #fb6356;
-    border-radius: 2px;
+    border-radius: 4px;
     display: block;
     width: 100%;
   }
